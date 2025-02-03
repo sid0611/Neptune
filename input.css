@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+    .top-19 {
+      top: -19px;
+    }
+
+    .left-25{
+        left:-25px;
+    }
+    .width-371{
+        width: 371px;
+    }
+    .height-31{
+        height: 31.87px;
+    }
+    .width-108{
+        width: 108px;
+    }
+  }
+  
