@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project_02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Heebo:wght@100..900&family=Spline+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="section-one">
+        <div class="upper-area">
+          <div class="upper-area-one">
+            <figure><img src="assets/Union.svg" alt="" /></figure>
+          </div>
+          <div class="container1">
+            <figure style="height: 41px; width: 41px">
+              <img src="assets/icon_02.png" alt="N" />
+            </figure>
+            <div style="display: flex; gap: 24px">
+              <div class="container11">
+                <h4 style="font-size: 16px; color: #2a2a2a; width: 149px">
+                  Jessica Thompon
+                </h4>
+                <h6 style="font-size: 12px; color: #626d82">Primary User</h6>
+              </div>
+              <figure>
+                <img src="assets/Icon Right.svg" alt="Not Found" />
+              </figure>
+            </div>
+          </div>
+          <nav> 
+            <div class="icon-name">
+              <i
+                class="material-icons"
+                style="font-size: 24px; margin-right: 19px"
+                >home</i
+              >Home
+            </div>
+            <div class="icon-name active">
+              <i
+                class="fa fa-file-text-o"
+                style="font-size: 24px; margin-right: 19px"
+              ></i
+              >Documents
+            </div>
+            <div class="icon-name">
+              <i
+                class="fa fa-comment-o"
+                aria-hidden="true"
+                style="font-size: 24px; margin-right: 19px"
+              ></i
+              >Chat With Neptune
+            </div>
+            <div class="icon-name">
+              <i
+                class="fa fa-question-circle"
+                aria-hidden="true"
+                style="font-size: 24px; margin-right: 19px"
+              ></i
+              >Help
+            </div>
+            <div class="icon-name">
+              <i
+                class="fa fa-cog"
+                aria-hidden="true"
+                style="font-size: 24px; margin-right: 19px"
+              ></i
+              >Settings
+            </div>
+          </nav>
+        </div>
+        <div class="lower-area">
+          <i class="fa fa-phone" style="font-size: 33px; color: #1f4451"></i>
+          <h3>Having trouble?</h3>
+          <p>
+            Feel free to contact us and we will always help you through the
+            process.
+          </p>
+          <button class="button" style="cursor: pointer;">Contact us</button>
+        </div>
+      </div>
+      <button id="toggle-sidebar" style="position: absolute; top: 10px; left: 370px; cursor: pointer;">
+        <img src="./assets/3lines.png" width="20px" height="15px" style="position: fixed;">
+      </button>
+      <div class="section-two">
+        
+        <div class="profilerow">
+        <div class="section21">
+          <p>Home</p>
+          <figure style="width: 20px; height: 20px">
+            <i
+              class="fa fa-chevron-right"
+              aria-hidden="true"
+              style="font-size: 10px"
+            ></i>
+          </figure>
+          <p class="ppp">Documents</p>
+        </div>
+        <button class="profilebutton" style="cursor: pointer;"><figure><img width="30px"; height="30px"; src="./assets/abstract-user-flat-4.png"></figure></button>
+        <div class="profileform">
+          <div class="formcontainer">
+            <form class="profileformcontent">
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Enter your name:" required>
+              <label>Upload your Photo:</label>
+              <input type="file" id="photo" required>
+              <button type="submit">Submit</button>
+              <button type="button" id="close-form">Close</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        <div class="section22">
+          <h2>My Documents</h2>
+          <div>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search documents"
+              style="color: #b5bdcd"
+            />
+            <figure>
+              <img
+                class="search-icon"
+                src="assets/Layer_1.svg"
+                alt=""
+                height="16.65px"
+              />
+            </figure>
+          </div>
+        </div>
+
+       
+
+        <table class="table">
+          <thead>
+            <th>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  padding-left: 28px;
+                  gap: 5px;
+                "
+              >
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <i
+                  class="fa fa-angle-down"
+                  aria-hidden="true"
+                  style="font-size: 10px; padding-right: 10px"
+                ></i>
+              </div>
+            </th>
+            <th>
+              <h3 class="text" style="color: black">Document Name</h3>
+            </th>
+            <th><h3 style="font-size: 16px">Status</h3></th>
+            <th><h3 class="text" style="color: black">Last Modified</h3></th>
+            <th><button class="addrow" style="cursor:pointer">Add Row</button></th>
+          </thead>
+          <tbody class="dataentry">
+
+          </tbody>
+            
+        </table>
+      </div>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
