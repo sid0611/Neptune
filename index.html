@@ -31,7 +31,7 @@
   </head>
   <body>
     <div class="flex justify-between h-screen ">
-      <div class="relative top-[-19px] left-[-25px] h-full box-border flex flex-col justify-between pt-[40px] pr-[28px]  pl-[54px] bg-white w-[371px]  transition-all duration-300 ease-in-out">
+      <div id="sidebar" class="overflow-hidden relative top-[-19px] left-[-25px] h-full box-border flex flex-col justify-between pt-[40px] pr-[28px]  pl-[54px] bg-white w-[371px]  transition-all duration-300 ease-in-out">
         <div class="flex flex-col gap-[25px]">
           <div class="upper-area-one">
             <figure class="h-[31.87px] w-[108px]"><img class="h-full w-full" src="assets/Union.svg" alt="" /></figure>
@@ -103,9 +103,9 @@
           <button class="border-none w-[97px] h-[34px] bg-[#1F4451] rounded-[5px] text-[12px] text-white" style="cursor: pointer;">Contact us</button>
         </div>
       </div>
-      <!-- <button id="toggle-sidebar" style="position: absolute; top: 10px; left: 370px; cursor: pointer;">
+      <button id="toggle-sidebar" style="position: absolute; top: 10px; left: 305px; cursor: pointer;">
         <img src="./assets/3lines.png" width="20px" height="15px" style="position: fixed;">
-      </button> -->
+      </button>
       <div class="flex flex-col gap-[34px] h-full box-border pt-[30px] pr-[80px] pb-[0px] pl-[80px] bg-[#F3F2F1] w-full">
         
         <div class="flex justify-between">
@@ -118,21 +118,25 @@
               style="font-size: 10px"
             ></i>
           </figure>
-          <p class="font-normal text-[#436D7C] leading-[22.4px] opacity-[0.65]">Documents</p>
+          <p class="font-normal text-[#436D7C] leading-[22.4px] opacity-[0.65] ">Documents</p>
         </div>
-        <button class="profilebutton" style="cursor: pointer;"><figure><img width="30px"; height="30px"; src="./assets/abstract-user-flat-4.png"></figure></button>
-        <div class="hidden fixed top-[2%] left-[80%] w-[200px] p-5 border border-black bg-white">
-          <input type="text" class="w-full p-2 my-2 border border-gray-300 rounded-md box-border">
-          <input type="file" class="w-full p-2 my-2 border border-gray-300 rounded-md box-border">
+        <button id="profilebutton" style="cursor: pointer;"><figure><img width="30px"; height="30px"; src="./assets/abstract-user-flat-4.png"></figure></button>
+        <div id="profileform" class="hidden bg-gray-100  fixed top-[2%] right-[8%] w-fit p-5 border-2 border-black">
+          <!-- <input type="text" class="w-full p-2 my-2 border border-gray-300 rounded-md box-border"> -->
+          <!-- <input type="file" class="w-full p-2 my-2 border border-gray-300 rounded-md box-border"> -->
           <div class="formcontainer">
-            <!-- <form class="flex flex-col">
-              <label for="name">Name:</label>
-              <input type="text" id="name" placeholder="Enter your name:" required>
-              <label>Upload your Photo:</label>
-              <input type="file" id="photo" required>
+            <form class="flex flex-col">
+              <div class="flex flex-row flex-wrap ">
+              <label for="name" >Name:</label>
+              <input type="text" id="name" placeholder="Enter name:" class="border-2 border-black" required>
+            </div>
+            <div class="flex flex-wrap border-2 border-black ">
+              <label>Upload here:</label>
+              <input type="file" id="photo" class="overflow-hidden flex-wrap " required>
+            </div>
               <button class="mt-[10px] p-[10px] rounded-[5px] cursor-pointer" type="submit">Submit</button>
               <button class="mt-[10px] p-[10px] rounded-[5px] cursor-pointer" type="button" class="bg-red-400 text-white" id="close-form">Close</button>
-            </form> -->
+            </form>
           </div>
         </div>
       </div>
@@ -192,7 +196,7 @@
         </table>
       </div>
     </div>
-<!--     
-    <script src="./script.js"></script> -->
+    
+    <script src="./script.js"></script>
   </body>
 </html>
